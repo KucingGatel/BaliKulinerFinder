@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bali Kuliner Finder</title>
+    <link rel="icon" href="logos.png">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <img src="logos.png" alt="Logo Bali Kuliner Finder">
+        <h1>Bali Kuliner Finder</h1>
+        <p><em>Kuliner Bali di Ujung Jari</em></p>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Project.html">Project</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <section id="beranda">
+            <h2>Selamat Datang di Bali Kuliner Finder!</h2>
+            <p>Temukan ribuan pilihan kuliner halal dan non-halal terbaik di seluruh Bali. Dari warung tradisional
+                hingga restoran modern, semua ada di satu platform!</p>
+            <p><strong>Mulai Pencarian Kuliner Anda Sekarang</strong></p>
+            <form action="/search" method="get">
+                <fieldset>
+                    <legend>Cari Kuliner Favorit Anda</legend>
+                    <label for="search">Nama Makanan atau Restoran:</label>
+                    <input type="text" id="search" name="search"
+                        placeholder="Contoh: Nasi Ayam, Bebek Betutu, Sate Lilit">
+                    <br><br>
+                    <label for="location">Lokasi:</label>
+                    <select id="location" name="location">
+                        <option value="">Pilih Kabupaten/Kota</option>
+                        <option value="denpasar">Denpasar</option>
+                        <option value="badung">Badung</option>
+                        <option value="gianyar">Gianyar</option>
+                        <option value="tabanan">Tabanan</option>
+                        <option value="ubud">Ubud</option>
+                        <option value="sanur">Sanur</option>
+                        <option value="canggu">Canggu</option>
+                        <option value="seminyak">Seminyak</option>
+                        <option value="kuta">Kuta</option>
+                    </select>
+                    <br><br>
+                    <label for="halal">Status Halal:</label>
+                    <select id="halal" name="halal">
+                        <option value="semua">Semua</option>
+                        <option value="halal">Halal Bersertifikat</option>
+                        <option value="muslim-friendly">Muslim Friendly</option>
+                        <option value="non-halal">Non-Halal</option>
+                    </select>
+                    <br><br>
+                    <button type="submit">🔍 Cari Sekarang</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <hr>
+
+        <!-- Tentang Section -->
+        <section id="tentang">
+            <h2>Tentang Bali Kuliner Finder</h2>
+            <p>Bali Kuliner Finder adalah platform inovatif yang didedikasikan untuk membantu wisatawan dan penduduk
+                lokal menemukan kuliner terbaik di Pulau Dewata. Kami memahami pentingnya menemukan makanan halal bagi
+                wisatawan Muslim, sekaligus menyediakan informasi lengkap tentang berbagai pilihan kuliner lainnya.</p>
+            <h3>Visi Kami</h3>
+            <p>Menjadi platform nomor satu dalam pencarian kuliner di Bali yang inklusif, informatif, dan mendukung
+                pertumbuhan UMKM lokal.</p>
+            <h3>Misi Kami</h3>
+            <ol>
+                <li>Menyediakan informasi akurat tentang status halal kuliner di Bali</li>
+                <li>Membantu UMKM kuliner untuk berkembang melalui platform digital</li>
+                <li>Memudahkan wisatawan menemukan kuliner sesuai preferensi mereka</li>
+                <li>Mempromosikan kekayaan kuliner Bali ke seluruh dunia</li>
+            </ol>
+        </section>
+
+        <hr>
+
+        <!-- Fitur Section -->
+        <section id="fitur">
+            <h2>Fitur Unggulan Kami</h2>
+            <table border="1" cellpadding="10" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Fitur</th>
+                        <th>Deskripsi</th>
+                        <th>Keuntungan</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>🕌 Filter Halal</strong></td>
+                        <td>Pencarian berdasarkan status halal (Bersertifikat, Muslim Friendly, Non-Halal)</td>
+                        <td>Memudahkan wisatawan Muslim menemukan makanan sesuai kebutuhan</td>
+                    </tr>
+                    <tr>
+                        <td><strong>📍 Peta Interaktif</strong></td>
+                        <td>Tampilan lokasi kuliner dalam peta untuk navigasi mudah</td>
+                        <td>Hemat waktu dengan navigasi langsung</td>
+                    </tr>
+                    <tr>
+                        <td><strong>⭐ Review & Rating</strong></td>
+                        <td>Ulasan dari pengguna asli tentang kualitas dan pelayanan</td>
+                        <td>Keputusan lebih tepat berdasarkan pengalaman orang lain</td>
+                    </tr>
+                    <tr>
+                        <td><strong>🏪 Platform UMKM</strong></td>
+                        <td>Wadah promosi gratis untuk UMKM kuliner lokal</td>
+                        <td>Meningkatkan visibility dan omzet UMKM</td>
+                    </tr>
+                    <tr>
+                        <td><strong>💰 Kisaran Harga</strong></td>
+                        <td>Informasi harga untuk memudahkan perencanaan budget</td>
+                        <td>Makan sesuai budget tanpa khawatir</td>
+                    </tr>
+                    <tr>
+                        <td><strong>📸 Galeri Foto</strong></td>
+                        <td>Foto makanan dan suasana dari pengguna</td>
+                        <td>Preview sebelum berkunjung</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <!-- Statistik Platform -->
+        <section id="statistik">
+            <h2>Statistik Platform</h2>
+            <table border="1" cellpadding="10" cellspacing="0">
+                <tr>
+                    <th>Kategori</th>
+                    <th>Jumlah</th>
+                    <th>Pertumbuhan per Bulan</th>
+                </tr>
+                <tr>
+                    <td>Total UMKM Terdaftar</td>
+                    <td>500+</td>
+                    <td>+15%</td>
+                </tr>
+                <tr>
+                    <td>Restoran Bersertifikat Halal</td>
+                    <td>200+</td>
+                    <td>+10%</td>
+                </tr>
+                <tr>
+                    <td>Pengguna Aktif</td>
+                    <td>10,000+</td>
+                    <td>+25%</td>
+                </tr>
+                <tr>
+                    <td>Review Terkumpul</td>
+                    <td>25,000+</td>
+                    <td>+20%</td>
+                </tr>
+            </table>
+        </section>
+
+        <hr>
+
+        <!-- Artikel Kuliner -->
+        <section id="artikel">
+            <h2>Artikel Kuliner Terbaru</h2>
+
+            <article>
+                <h3>Mengenal Kuliner Halal Khas Bali</h3>
+                <p><strong>Tanggal:</strong> 8 Oktober 2025</p>
+                <p>Bali tidak hanya terkenal dengan kuliner tradisionalnya yang non-halal. Banyak hidangan khas Bali
+                    yang telah dimodifikasi menjadi versi halal tanpa menghilangkan cita rasa aslinya.</p>
+                <ul>
+                    <li>Ayam Betutu</li>
+                    <li>Sate Lilit Ikan</li>
+                    <li>Nasi Campur Bali Halal</li>
+                </ul>
+                <a href="#baca-selengkapnya">Baca selengkapnya...</a>
+            </article>
+
+            <article>
+                <h3>Tips Memulai Bisnis Kuliner di Bali</h3>
+                <p><strong>Tanggal:</strong> 5 Oktober 2025</p>
+                <p>Panduan lengkap untuk memulai usaha kuliner di Bali, termasuk:</p>
+                <ul>
+                    <li>Perizinan dan sertifikasi</li>
+                    <li>Pemilihan lokasi strategis</li>
+                    <li>Marketing digital</li>
+                    <li>Manajemen operasional</li>
+                </ul>
+                <a href="#baca-selengkapnya">Baca selengkapnya...</a>
+            </article>
+
+            <article>
+                <h3>Jelajah Kuliner Halal di Ubud</h3>
+                <p><strong>Tanggal:</strong> 1 Oktober 2025</p>
+                <p>Panduan lengkap menjelajahi kuliner halal di kawasan Ubud, meliputi:</p>
+                <ul>
+                    <li>Restoran halal terbaik</li>
+                    <li>Kafe dan kedai kopi halal</li>
+                    <li>Warung lokal ramah Muslim</li>
+                    <li>Kisaran harga dan rekomendasi menu</li>
+                </ul>
+                <a href="#baca-selengkapnya">Baca selengkapnya...</a>
+            </article>
+        </section>
+
+        <!-- FAQ -->
+        <section>
+            <h2>Pertanyaan Umum (FAQ)</h2>
+            <details>
+                <summary>Bagaimana cara mendaftarkan UMKM di platform ini?</summary>
+                <p>Anda dapat mendaftar melalui form pendaftaran UMKM di halaman utama atau menghubungi tim kami
+                    langsung.</p>
+            </details>
+
+            <details>
+                <summary>Apakah semua restoran halal sudah tersertifikasi MUI?</summary>
+                <p>Tidak semua, kami membedakan antara "Halal Bersertifikat" dan "Muslim Friendly" untuk memudahkan
+                    pencarian.</p>
+            </details>
+
+            <details>
+                <summary>Bagaimana cara memberikan review?</summary>
+                <p>Anda perlu membuat akun dan melakukan check-in di lokasi untuk dapat memberikan review yang
+                    terverifikasi.</p>
+            </details>
+        </section>
+
+        <hr>
+
+        <!-- Kontak -->
+        <section id="kontak">
+            <h2>📞 Hubungi Kami</h2>
+            <address>
+                <strong>Bali Kuliner Finder</strong><br>
+                Jl. Kuliner No. 123, Denpasar, Bali 80234<br>
+                Telepon: <a href="tel:+62361123456">+62 361 123456</a><br>
+                WhatsApp: <a href="https://wa.me/628123456789">+62 812 3456 789</a><br>
+                Email: <a href="mailto:info@balikulinerfinder.com">info@balikulinerfinder.com</a>
+            </address>
+            <h3>Kirim Pesan</h3>
+            <form action="/kirim-pesan" method="post">
+                <label for="nama">Nama:</label><br>
+                <input type="text" id="nama" name="nama" required><br><br>
+                <label for="email-kontak">Email:</label><br>
+                <input type="email" id="email-kontak" name="email-kontak" required><br><br>
+                <label for="subjek">Subjek:</label><br>
+                <input type="text" id="subjek" name="subjek" required><br><br>
+                <label for="pesan">Pesan:</label><br>
+                <textarea id="pesan" name="pesan" rows="6" cols="50" required></textarea><br><br>
+                <button type="submit">✉️ Kirim Pesan</button>
+            </form>
+            <h3>Ikuti Kami di Media Sosial</h3>
+            <p>
+                <a href="https://instagram.com/balikulinerfinder">📷 Instagram</a> |
+                <a href="https://facebook.com/balikulinerfinder">👍 Facebook</a> |
+                <a href="https://twitter.com/balikuliner">🐦 Twitter</a> |
+                <a href="https://tiktok.com/@balikulinerfinder">🎵 TikTok</a>
+            </p>
+    </main>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <p>
+            <a href="home.html">Home</a> |
+            <a href="AboutUs.html">About Us</a> |
+            <a href="Services.html">Services</a> |
+            <a href="Project.html">Project</a>
+        </p>
+        <p><strong>Bali Kuliner Finder</strong> &copy; 2025</p>
+        <p><small>Kuliner Bali di Ujung Jari</small></p>
+    </footer>
+</body>
+
+</html>
