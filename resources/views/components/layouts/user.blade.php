@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdn.ckeditor.com/ckeditor5/43.0.0/ckeditor5.css" />
     <script src="https://cdn.ckeditor.com/ckeditor5/43.0.0/ckeditor5.umd.js"></script>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-    <title>{{ $title }} | DPM FMIPA UNUD</title>
+    <title>{{ $title }} | Bali Kuliner Finder</title>
 </head>
 
 <body class="font-poppins min-h-screen flex flex-col justify-between">

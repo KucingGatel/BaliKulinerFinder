@@ -2,55 +2,57 @@
     <x-slot:title>Home</x-slot:title>
     <div class="container mx-auto max-w-6xl px-4 py-8">
         <section id="beranda" class="animate-on-scroll">
-            <div class="text-center mb-12">
-                <h2 class="text-4xl font-bold text-gray-800 mb-4">Selamat Datang di Bali Kuliner Finder!</h2>
-                <p class="text-xl text-gray-600 mb-6">Temukan ribuan pilihan kuliner halal dan non-halal terbaik di
-                    seluruh Bali. Dari warung tradisional
-                    hingga restoran modern, semua ada di satu platform!</p>
-                <p class="text-2xl font-semibold text-indigo-600">Mulai Pencarian Kuliner Anda Sekarang</p>
+            <!-- Carousel Container -->
+            <div class="relative w-full h-[500px] mb-12 overflow-hidden rounded-xl">
+                <!-- Carousel Items -->
+                <div class="flex transition-transform duration-500 h-full" id="carousel">
+                    <!-- Slide 1 -->
+                    <div class="min-w-full relative">
+                        <img src="/images/IMG_1.jpeg" alt="Kuliner Bali" class="w-full h-full object-cover bg-black/80">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="text-center text-white px-4">
+                                <h2 class="text-5xl font-bold mb-4">Selamat Datang di Bali Kuliner Finder!</h2>
+                                <p class="text-xl mb-6">Temukan Cita Rasa Autentik Pulau Dewata</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="min-w-full relative">
+                        <img src="/images/IMG_2.jpeg" alt="Makanan Halal" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="text-center text-white px-4">
+                                <h2 class="text-5xl font-bold mb-4">Kuliner Halal Terbaik</h2>
+                                <p class="text-xl mb-6">Jaminan Kenyamanan untuk Wisatawan Muslim</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="min-w-full relative">
+                        <img src="/images/IMG_1.jpeg" alt="Restoran Modern" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="text-center text-white px-4">
+                                <h2 class="text-5xl font-bold mb-4">Dari Tradisional Hingga Modern</h2>
+                                <p class="text-xl mb-6">Berbagai Pilihan Kuliner dalam Satu Platform</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {{-- <!-- Carousel Controls -->
+                <button onclick="moveSlide(-1)" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-50 hover:bg-opacity-75 rounded-full p-2 transition">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+                </button>
+                <button onclick="moveSlide(1)" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-50 hover:bg-opacity-75 rounded-full p-2 transition">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                </button>
+
+                <!-- Carousel Indicators -->
+                <div class="absolute bottom-4 left-0 right-0 flex justify-center space-x-2">
+                    <button onclick="goToSlide(0)" class="w-3 h-3 rounded-full bg-white bg-opacity-50 hover:bg-opacity-75 transition"></button>
+                    <button onclick="goToSlide(1)" class="w-3 h-3 rounded-full bg-white bg-opacity-50 hover:bg-opacity-75 transition"></button>
+                    <button onclick="goToSlide(2)" class="w-3 h-3 rounded-full bg-white bg-opacity-50 hover:bg-opacity-75 transition"></button>
+                </div> --}}
             </div>
-            <form action="/search" method="get" class="max-w-3xl mx-auto bg-white rounded-xl shadow-lg p-8">
-                <fieldset class="space-y-6">
-                    <legend class="text-2xl font-bold text-gray-700 mb-6">Cari Kuliner Favorit Anda</legend>
-                    <div class="space-y-2">
-                        <label for="search" class="block text-gray-700 font-medium">Nama Makanan atau
-                            Restoran:</label>
-                        <input type="text" id="search" name="search"
-                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition"
-                            placeholder="Contoh: Nasi Ayam, Bebek Betutu, Sate Lilit">
-                    </div>
-                    <div class="space-y-2">
-                        <label for="location" class="block text-gray-700 font-medium">Lokasi:</label>
-                        <select id="location" name="location"
-                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition">
-                            <option value="">Pilih Kabupaten/Kota</option>
-                            <option value="denpasar">Denpasar</option>
-                            <option value="badung">Badung</option>
-                            <option value="gianyar">Gianyar</option>
-                            <option value="tabanan">Tabanan</option>
-                            <option value="ubud">Ubud</option>
-                            <option value="sanur">Sanur</option>
-                            <option value="canggu">Canggu</option>
-                            <option value="seminyak">Seminyak</option>
-                            <option value="kuta">Kuta</option>
-                        </select>
-                    </div>
-                    <div class="space-y-2">
-                        <label for="halal" class="block text-gray-700 font-medium">Status Halal:</label>
-                        <select id="halal" name="halal"
-                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition">
-                            <option value="semua">Semua</option>
-                            <option value="halal">Halal Bersertifikat</option>
-                            <option value="muslim-friendly">Muslim Friendly</option>
-                            <option value="non-halal">Non-Halal</option>
-                        </select>
-                    </div>
-                    <button type="submit"
-                        class="w-full bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-3 px-6 rounded-lg hover:from-blue-700 hover:to-indigo-800 transition shadow-md">
-                        🔍 Cari Sekarang
-                    </button>
-                </fieldset>
-            </form>
         </section>
 
         <div class="border-t border-gray-200 my-16"></div>
@@ -66,7 +68,7 @@
                     bagi
                     wisatawan Muslim, sekaligus menyediakan informasi lengkap tentang berbagai pilihan kuliner lainnya.
                 </p>
-                <div class="bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-lg mb-8">
+                <div class=p-6 rounded-lg mb-8">
                     <h3 class="text-2xl font-semibold text-blue-700 mb-4">Visi Kami</h3>
                     <p class="text-gray-700">
                         Menjadi platform nomor satu dalam pencarian kuliner di Bali yang inklusif, informatif, dan
@@ -105,7 +107,7 @@
             </div>
         </section>
 
-        <hr>
+
 
         <!-- Fitur Section -->
         <section id="fitur" class="py-16 animate-on-scroll">
@@ -163,10 +165,10 @@
             </div>
         </section>
 
-        <hr>
+
 
         <!-- Statistik Platform -->
-        <section id="statistik" class="py-16 bg-gradient-to-r from-blue-50 to-indigo-50 animate-on-scroll">
+        <section id="statistik" class="py-16 animate-on-scroll">
             <div class="container mx-auto max-w-6xl px-4">
                 <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Statistik Platform</h2>
                 <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -213,7 +215,7 @@
             </div>
         </section>
 
-        <hr>
+
 
         <!-- Artikel Kuliner -->
         <section id="artikel" class="py-16 animate-on-scroll">
@@ -379,10 +381,10 @@
             </div>
         </section>
 
-        <hr>
+
 
         <!-- Kontak -->
-        <section id="kontak" class="py-16 bg-gradient-to-r from-blue-50 to-indigo-50 animate-on-scroll">
+        <section id="kontak" class="py-16 animate-on-scroll">
             <div class="container mx-auto max-w-6xl px-4">
                 <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">📞 Hubungi Kami</h2>
                 <div class="grid md:grid-cols-2 gap-12">
@@ -432,7 +434,7 @@
                         </address>
 
                         <div class="bg-white rounded-xl shadow-lg p-6">
-                            <h3 class="text-xl font-semibold text-gray-800 mb-4">Ikuti Kami di Media Sosial!</h3>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-4">Ikuti Kami di Media Sosial</h3>
                             <div class="flex space-x-4">
                                 <a href="https://instagram.com/balikulinerfinder"
                                     class="text-gray-600 hover:text-pink-600 transition">
@@ -508,4 +510,36 @@
         </section>
     </div>
 
-</x-layout.user>
+    <!-- Carousel JavaScript -->
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelector('#carousel');
+        const totalSlides = 3;
+
+        // Auto-advance slides every 5 seconds
+        setInterval(() => moveSlide(1), 5000);
+
+        function updateCarousel() {
+            slides.style.transform = `translateX(-${currentSlide * 100}%)`;
+
+            // Update indicators
+            document.querySelectorAll('[onclick^="goToSlide"]').forEach((btn, index) => {
+                btn.classList.toggle('bg-opacity-100', index === currentSlide);
+            });
+        }
+
+        function moveSlide(direction) {
+            currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+            updateCarousel();
+        }
+
+        function goToSlide(slideIndex) {
+            currentSlide = slideIndex;
+            updateCarousel();
+        }
+
+        // Initialize the first slide
+        updateCarousel();
+    </script>
+
+    </x-layout.user>
