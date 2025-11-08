@@ -432,7 +432,7 @@
                         </address>
 
                         <div class="bg-white rounded-xl shadow-lg p-6">
-                            <h3 class="text-xl font-semibold text-gray-800 mb-4">Ikuti Kami di Media Sosial</h3>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-4">Ikuti Kami di Media Sosial!</h3>
                             <div class="flex space-x-4">
                                 <a href="https://instagram.com/balikulinerfinder"
                                     class="text-gray-600 hover:text-pink-600 transition">
