@@ -8,6 +8,10 @@
     },
     "routes": [
         {
+            "src": "/img/(.*)",
+            "dest": "/public/img/"
+        },
+        {
             "src": "/(.*)",
             "dest": "/api/index.php"
         }
@@ -26,5 +30,6 @@
         "CACHE_DRIVER": "array",
         "LOG_CHANNEL": "stderr",
         "SESSION_DRIVER": "cookie"
-    }
+    },
+    "outputdirectory": "public"
 }
