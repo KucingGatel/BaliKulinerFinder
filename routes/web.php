@@ -5,4 +5,6 @@ use App\Http\Controllers\HomeController;
 
 Route::controller(HomeController::class)->group(function () {
     Route::get('/', 'index')->name('home');
+    Route::get('/about', 'about')->name('about');
+    Route::get('/service', 'service')->name('service');
 });

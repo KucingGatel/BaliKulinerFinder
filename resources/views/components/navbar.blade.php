@@ -1,4 +1,4 @@
-<header class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-6 px-4 relative overflow-hidden">
+<header class=" bg-[#159E9E] text-white py-6 px-4 relative overflow-hidden">
     <div class="container mx-auto max-w-6xl relative z-10">
         <div class="flex items-center justify-between">
             <div class="flex items-center space-x-4">
@@ -10,10 +10,9 @@
             </div>
             <nav class="hidden md:block">
                 <ul class="flex space-x-6">
-                    <li><a href="home.html" class="hover:text-blue-200 transition">Home</a></li>
-                    <li><a href="AboutUs.html" class="hover:text-blue-200 transition">About Us</a></li>
-                    <li><a href="Services.html" class="hover:text-blue-200 transition">Services</a></li>
-                    <li><a href="Project.html" class="hover:text-blue-200 transition">Project</a></li>
+                    <li><a href="/" class="hover:text-blue-200 transition">Home</a></li>
+                    <li><a href="/about" class="hover:text-blue-200 transition">About Us</a></li>
+                    <li><a href="/service" class="hover:text-blue-200 transition">Services</a></li>
                 </ul>
             </nav>
             <button id="menuToggle" class="md:hidden text-white">
@@ -24,10 +23,9 @@
         </div>
         <div id="mobileMenu" class="hidden md:hidden mt-4 bg-blue-700 rounded-lg p-4">
             <ul class="space-y-2">
-                <li><a href="home.html" class="block hover:text-blue-200 transition">Home</a></li>
-                <li><a href="AboutUs.html" class="block hover:text-blue-200 transition">About Us</a></li>
-                <li><a href="Services.html" class="block hover:text-blue-200 transition">Services</a></li>
-                <li><a href="Project.html" class="block hover:text-blue-200 transition">Project</a></li>
+                <li><a href="/" class="block hover:text-blue-200 transition">Home</a></li>
+                <li><a href="/about" class="block hover:text-blue-200 transition">About Us</a></li>
+                <li><a href="/service" class="block hover:text-blue-200 transition">Services</a></li>
             </ul>
         </div>
     </div>
