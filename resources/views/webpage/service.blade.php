@@ -1,6 +1,8 @@
 <x-layouts.user>
     <x-slot:title>Services</x-slot:title>
-    <!-- Fitur Section -->
+    <div class="container mx-auto max-w-4xl px-4 py-16">
+
+        <!-- Fitur Section -->
         <section id="fitur" class="py-16 animate-on-scroll">
             <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Fitur Unggulan Kami</h2>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -55,4 +57,6 @@
                 </div>
             </div>
         </section>
+    </div>
+
 </x-layouts.user>
