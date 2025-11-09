@@ -176,7 +176,7 @@
                     <div
                         class="bg-white rounded-xl shadow-lg p-6 text-center transform hover:scale-105 transition duration-300">
                         <div class="text-4xl font-bold text-blue-600 mb-2">
-                            <span class="stat-number" data-target="500">0</span>+
+                            <span class="stat-number" data-target="500">500</span>+
                         </div>
                         <p class="text-gray-600 text-sm">Total UMKM Terdaftar</p>
                         <div class="text-green-500 text-sm mt-2">+15% per bulan</div>
@@ -186,7 +186,7 @@
                     <div
                         class="bg-white rounded-xl shadow-lg p-6 text-center transform hover:scale-105 transition duration-300">
                         <div class="text-4xl font-bold text-blue-600 mb-2">
-                            <span class="stat-number" data-target="200">0</span>+
+                            <span class="stat-number" data-target="200">60</span>+
                         </div>
                         <p class="text-gray-600 text-sm">Restoran Bersertifikat Halal</p>
                         <div class="text-green-500 text-sm mt-2">+10% per bulan</div>
@@ -196,7 +196,7 @@
                     <div
                         class="bg-white rounded-xl shadow-lg p-6 text-center transform hover:scale-105 transition duration-300">
                         <div class="text-4xl font-bold text-blue-600 mb-2">
-                            <span class="stat-number" data-target="10000">0</span>+
+                            <span class="stat-number" data-target="10000">70</span>+
                         </div>
                         <p class="text-gray-600 text-sm">Pengguna Aktif</p>
                         <div class="text-green-500 text-sm mt-2">+25% per bulan</div>
@@ -206,114 +206,11 @@
                     <div
                         class="bg-white rounded-xl shadow-lg p-6 text-center transform hover:scale-105 transition duration-300">
                         <div class="text-4xl font-bold text-blue-600 mb-2">
-                            <span class="stat-number" data-target="25000">0</span>+
+                            <span class="stat-number" data-target="25000">90</span>+
                         </div>
                         <p class="text-gray-600 text-sm">Review Terkumpul</p>
                         <div class="text-green-500 text-sm mt-2">+20% per bulan</div>
                     </div>
-                </div>
-            </div>
-        </section>
-
-
-
-        <!-- Artikel Kuliner -->
-        <section id="artikel" class="py-16 animate-on-scroll">
-            <div class="container mx-auto max-w-6xl px-4">
-                <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Artikel Kuliner Terbaru</h2>
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Artikel 1 -->
-                    <article
-                        class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
-                        <div class="p-6">
-                            <div class="text-sm text-blue-600 mb-2">8 Oktober 2025</div>
-                            <h3 class="text-xl font-bold text-gray-800 mb-4">Mengenal Kuliner Halal Khas Bali</h3>
-                            <p class="text-gray-600 mb-4">Bali tidak hanya terkenal dengan kuliner tradisionalnya yang
-                                non-halal. Banyak hidangan khas Bali yang telah dimodifikasi menjadi versi halal tanpa
-                                menghilangkan cita rasa aslinya.</p>
-                            <ul class="text-gray-600 mb-4 space-y-2">
-                                <li class="flex items-center space-x-2">
-                                    <span class="text-blue-500">•</span>
-                                    <span>Ayam Betutu</span>
-                                </li>
-                                <li class="flex items-center space-x-2">
-                                    <span class="text-blue-500">•</span>
-                                    <span>Sate Lilit Ikan</span>
-                                </li>
-                                <li class="flex items-center space-x-2">
-                                    <span class="text-blue-500">•</span>
-                                    <span>Nasi Campur Bali Halal</span>
-                                </li>
-                            </ul>
-                            <a href="#baca-selengkapnya"
-                                class="inline-block text-blue-600 hover:text-blue-800 transition">Baca selengkapnya
-                                →</a>
-                        </div>
-                    </article>
-
-                    <!-- Artikel 2 -->
-                    <article
-                        class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
-                        <div class="p-6">
-                            <div class="text-sm text-blue-600 mb-2">5 Oktober 2025</div>
-                            <h3 class="text-xl font-bold text-gray-800 mb-4">Tips Memulai Bisnis Kuliner di Bali</h3>
-                            <p class="text-gray-600 mb-4">Panduan lengkap untuk memulai usaha kuliner di Bali,
-                                termasuk:</p>
-                            <ul class="text-gray-600 mb-4 space-y-2">
-                                <li class="flex items-center space-x-2">
-                                    <span class="text-blue-500">•</span>
-                                    <span>Perizinan dan sertifikasi</span>
-                                </li>
-                                <li class="flex items-center space-x-2">
-                                    <span class="text-blue-500">•</span>
-                                    <span>Pemilihan lokasi strategis</span>
-                                </li>
-                                <li class="flex items-center space-x-2">
-                                    <span class="text-blue-500">•</span>
-                                    <span>Marketing digital</span>
-                                </li>
-                                <li class="flex items-center space-x-2">
-                                    <span class="text-blue-500">•</span>
-                                    <span>Manajemen operasional</span>
-                                </li>
-                            </ul>
-                            <a href="#baca-selengkapnya"
-                                class="inline-block text-blue-600 hover:text-blue-800 transition">Baca selengkapnya
-                                →</a>
-                        </div>
-                    </article>
-
-                    <!-- Artikel 3 -->
-                    <article
-                        class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
-                        <div class="p-6">
-                            <div class="text-sm text-blue-600 mb-2">1 Oktober 2025</div>
-                            <h3 class="text-xl font-bold text-gray-800 mb-4">Jelajah Kuliner Halal di Ubud</h3>
-                            <p class="text-gray-600 mb-4">Panduan lengkap menjelajahi kuliner halal di kawasan Ubud,
-                                meliputi:</p>
-                            <ul class="text-gray-600 mb-4 space-y-2">
-                                <li class="flex items-center space-x-2">
-                                    <span class="text-blue-500">•</span>
-                                    <span>Restoran halal terbaik</span>
-                                </li>
-                                <li class="flex items-center space-x-2">
-                                    <span class="text-blue-500">•</span>
-                                    <span>Kafe dan kedai kopi halal</span>
-                                </li>
-                                <li class="flex items-center space-x-2">
-                                    <span class="text-blue-500">•</span>
-                                    <span>Warung lokal ramah Muslim</span>
-                                </li>
-                                <li class="flex items-center space-x-2">
-                                    <span class="text-blue-500">•</span>
-                                    <span>Kisaran harga dan rekomendasi menu</span>
-                                </li>
-                            </ul>
-                            <a href="#baca-selengkapnya"
-                                class="inline-block text-blue-600 hover:text-blue-800 transition">Baca selengkapnya
-                                →</a>
-                        </div>
-                    </article>
                 </div>
             </div>
         </section>
