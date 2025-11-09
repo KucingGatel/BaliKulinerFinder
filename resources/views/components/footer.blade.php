@@ -4,10 +4,9 @@
                 <div>
                     <h3 class="text-xl font-bold mb-4">Menu</h3>
                     <ul class="space-y-2">
-                        <li><a href="home.html" class="hover:text-blue-400 transition">Home</a></li>
-                        <li><a href="AboutUs.html" class="hover:text-blue-400 transition">About Us</a></li>
-                        <li><a href="Services.html" class="hover:text-blue-400 transition">Services</a></li>
-                        <li><a href="Project.html" class="hover:text-blue-400 transition">Project</a></li>
+                        <li><a href="/" class="hover:text-blue-400 transition">Home</a></li>
+                        <li><a href="/about" class="hover:text-blue-400 transition">About Us</a></li>
+                        <li><a href="/service" class="hover:text-blue-400 transition">Services</a></li>
                     </ul>
                 </div>
                 <div>
