@@ -8,8 +8,16 @@
     },
     "routes": [
         {
+            "src": "/build/(.*)",
+            "dest": "/public/build/$1"
+        },
+        {
             "src": "/img/(.*)",
-            "dest": "/public/img/"
+            "dest": "/public/img/$1"
+        },
+        {
+            "src": "/(.*\\.(css|js|jpg|jpeg|png|gif|svg|ico|webp|woff|woff2|ttf|eot|json))",
+            "dest": "/public/$1"
         },
         {
             "src": "/(.*)",
@@ -20,7 +28,7 @@
         "NODE_VERSION": "20",
         "APP_ENV": "production",
         "APP_DEBUG": "false",
-        "APP_URL": "https://bali-kuliner-finder.vercel.app/",
+        "APP_URL": "https://bali-kuliner-finder.vercel.app",
         "APP_CONFIG_CACHE": "/tmp/config.php",
         "APP_EVENTS_CACHE": "/tmp/events.php",
         "APP_PACKAGES_CACHE": "/tmp/packages.php",
